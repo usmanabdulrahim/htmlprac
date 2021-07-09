@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>labeltri</title>
+</head>
+<body>
+    <script>
+function settheme() {
+    var objs1= document.getElementById("s1");
+    objs1.style="color:red";
+    objs1.style.fontFamily="Arial"
+    var objs2=document.getElementById("s2");
+    objs2.style="color:yellow",
+    objs2.style.fontFamily="Verdana"
+}
+function settheme1() {
+    var objs1= document.getElementById("s1");
+    objs1.style="color:green";
+    var objs2=document.getElementById("s2");
+    objs2.style="color:orange";
+}
+function settheme2() {
+    var objs1= document.getElementById("s1");
+    objs1.style="color:black";
+    var objs2=document.getElementById("s2")
+    objs2.style="color:brown"
+}
+    </script>
+    
+</body>
+</html>
+<h1>theme challage</h1>
+<h2>
+<span  id="s1" style="color:blue" >Pickup</span>
+<span id="s2" style="color:orangered">Biz</span>
+</h2>
+<br>
+<button onclick="settheme()">theme1</button>
+<button onclick="settheme1()">theme2</button>
+<button onclick="settheme2()">theme3</button>

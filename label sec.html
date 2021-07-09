@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function  setfullName(){
+            var fname= document.getElementById("firstname");
+            var mname= document.getElementById("middelname");
+            var lname= document.getElementById("lastname");
+            var fullname= document.getElementById("fullname");
+fullname.value= fname.value+" "+mname.value+" "+lname.value;
+
+    }
+    function clr(){
+        var clrfullname= document.getElementById("fullname");
+        clrfullname.value= " " 
+        var clrfirstname=document.getElementById("firstname");
+        clrfirstname.value= " "
+        var clrmiddelname=document.getElementById("middelname");
+        clrmiddelname.value= " "
+        var clrlastname=document.getElementById("lastname");
+        clrlastname.value= " "
+    }
+</script>
+</body>
+</html>
+<h1>EMPLOYEE DETAILS</h1>
+<hr>
+<h4>personal info</h4>
+<label>first Name</label>
+<input type= "text" id="firstname">
+<br> <br>
+<label>middel Name</label>
+<input type="text" id="middelname">
+<br> <br>
+<label>Last Name</label>
+<input type= "text" id="lastname">
+<button onclick="setfullName()">Full Name</button>
+<br> <br>
+
+<label>Full Name</label>
+<input type="text" id="fullname">
+<button onclick="clr()">clear</button>
+<hr>

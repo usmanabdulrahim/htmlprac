@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>label</title>
+</head>
+<body>
+    <script>
+        function setfullName(){
+            var fName= document.getElementById("firstname");
+            var lName= document.getElementById("lastname");
+            var fullName= document.getElementById("fullname");
+
+            fullName.value= fName.value +" "+lName.value;
+        }
+    </script>
+</body>
+</html>
+<h1>Empoyee Details</h1>
+<hr>
+<h4>Personal Information</h4>
+ <label>First Name:</label>
+ <input type= "text" id="firstname">
+ 
+ <br> <br>
+ <label>last Name:</label>
+ <input type= "text" id="lastname">
+ <button onclick="setfullName()">Full Name </button>
+ 
+ <br> <br> <br>
+ <label>Full Name:</label>
+ <input type= "text" id="fullname">
+ <hr>
