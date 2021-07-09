@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<script>
+    function getStoreValues() {
+
+        document.getElementById("body").style = `background-color: ${sessionStorage.getItem("favcolor")}`;
+    }
+</script>
+<style>
+    a {
+        padding: 10px;
+        color: white;
+
+    }
+
+    a:hover {
+        background-color: black;
+        padding: 10px;
+        border-radius: 30px;
+
+    }
+
+    nav {
+        padding: 30px;
+        color: green;
+        background-color: orange;
+
+
+    }
+    footer{
+        background-color: cornflowerblue;
+        padding: 5px;
+        height:100px;
+
+        
+    }
+    iframe{
+        width:1330px;
+        height: 95px;
+    }
+</style>
+
+<body id="body">
+
+    <nav>
+        <a href="registration.html">Registration</a>
+        <a href="home.html">Home</a>
+        <a href="image.html">Products</a>
+        <a href="about.html">AboutUs</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <br> <br>
+    <aside>
+        <a>Eye Care</a>
+        <a>Skin Care</a>
+    </aside>
+
+    <style>
+        h1 {
+            text-align: center;
+            color: green;
+        }
+
+        h2 {
+            color: orange;
+        }
+    </style>
+
+
+
+    <h1>
+        UROOJ ENTERPRISES
+    </h1>
+    <marquee behaviour="alternate" scrollamount="10%" direction="left">
+        <h2>WELL COME TO</h2>
+    </marquee> 
+    <br> <br> <br> <br> <br>
+    <footer>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15074.366665189653!2d77.3017796!3d19.1693433!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa1299c0ea5c6a68c!2sUrooj%20Enterprises!5e0!3m2!1sen!2sin!4v1625814651569!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy"></iframe>
+    </footer>
+</body>
+<script>
+    getStoreValues();
+</script>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function getStoreValues(){
+        document.getElementById("body").style=`background-color:${sessionStorage.getItem("favcolor")}`;
+    }
+</script>
+<style>
+    a{
+        padding: 10px;
+        color: white;
+    
+    }
+    nav{
+        padding:30px;
+        color: green;
+        background-color: orange;
+    
+    } </style>
+    <body id="body">
+      
+        <nav>
+            <a href="registration.html">Registration</a>
+            <a href="home.html">Home</a>
+            <a href="image.html">Products</a>
+            <a href="about.html">AboutUs</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+    <h1>Email: Urooj2018@gmail.com</h1>
+    <br> <br> <br>
+    <h1>Mobile number: 8600225520</h1>
+    <br> <br>  <br>
+    <h1>Posal Address: 25/299, Labour coolony, Nanded-431602</h1>
+</body>
+<script>
+    getStoreValues()
+</script>
+</html>

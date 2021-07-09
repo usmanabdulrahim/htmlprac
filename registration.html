@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>form</title>
+
+</head>
+<script>
+    function setStoreValues()
+    {
+    
+        sessionStorage.setItem("username",document.getElementById("name").value);
+        sessionStorage.setItem("password",document.getElementById("passwd").value);
+        sessionStorage.setItem("favcolor",document.getElementById("colorpicker").value);
+
+    }
+    function getStoreValues(){
+        
+        document.getElementById("body").style=`background-color: ${sessionStorage.getItem("favcolor")}`;
+        
+        document.getElementById("colorpicker").value=sessionStorage.getItem("favcolor");
+        document.getElementById("name").value=sessionStorage.getItem("username");
+        document.getElementById("passwd").value=sessionStorage.getItem("password");
+        document.getElementById("cpasswd")=sessionStorage.getItem("password");
+    }
+
+    
+
+</script>
+</head>
+
+<style>
+    a{
+        padding: 10px;
+        color: white;
+    
+    }
+    nav{
+        padding:30px;
+        color: green;
+        background-color: orange;
+    
+    } </style>
+    <body id="body">
+      
+        <nav>
+            <a href="registration.html">Registration</a>
+            <a href="home.html">Home</a>
+            <a href="image.html">Products</a>
+            <a href="about.html">AboutUs</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <fieldset>
+            <legend>Registration Form</legend>
+        
+        <br> <br>
+    
+    <form>
+        <h1> <span style="color:blue">User Registration</span> </h1>
+        <label>NAME</label>
+        <input id="name" type="text" >
+        <br> <br>
+        <label>Password</label>
+        <input id="passwd" type="password" >
+        <br> <br>
+        <label>Confirm Password</label>
+        <input id="cpasswd" type="password" >
+        <br> <br>
+        <label>Gender</label>
+        <input type="radio" name="gender" value="Male">male
+        <input type="radio" name="gender"  value="Female">female
+        <br> <br>
+        <label>Hobbies</label>
+        <input type="checkbox" name="playing">playing
+        <input type="checkbox" name="sleeping">sleeping
+        <input type="checkbox" name="gardening">gardening
+        <br> <br>
+        <label>DOB</label>
+        <input type="date" id="DOB">
+        <br> <br> <br>
+        <label>Select favorite color</label>
+        <input type="color" id="colorpicker">
+        <button onclick="setStoreValues()">Submit</button>
+        
+
+    </form>
+</fieldset>
+</body>
+<script>
+    getStoreValues();
+</script>
+</html>
