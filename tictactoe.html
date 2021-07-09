@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <script>
+        var player=1;
+    function ticHere(id){
+        var objTic = document.getElementById(id);
+        var objPerson = document.getElementById("player");
+        if(player==1){
+            objTic.style = "color: brown; font-size: 30px;";
+            objPerson.style = "color: green; font-size: 30px;";
+            objTic.innerHTML = "ME";
+            player=2;
+        } 
+        else
+        {
+            objTic.style = "color:yellow; font-size: 30px;";
+            objPerson.style = "color:pink; font-size: 30px;";
+            objTic.innerHTML = "HE";
+            player=1; 
+
+        }
+        objPerson.innerHTML="Player"+ player;
+    }
+    </script>
+</head>
+<body>
+    <h1><span id="player" style="color:red; font-size: 30px;">player1</span></h1>
+    <table border="5">
+        <tr>
+<td><span id="11" onclick="ticHere('11')" style="color: gray; font-size: 30px;" >OO</span></td>
+<td><span id="12" onclick="ticHere('12')" style="color: gray; font-size: 30px;">OO</span></td>
+<td><span id="13" onclick="ticHere('13')" style="color: gray; font-size: 30px;">OO</span></td>
+        </tr>
+        <tr>
+<td><span id="21" onclick="ticHere('21')" style="color: gray; font-size: 30px;">OO</span></td>
+<td><span id="22" onclick="ticHere('22')" style="color: gray; font-size: 30px;">OO</span></td>
+<td><span id="23" onclick="ticHere('23')" style="color: gray; font-size: 30px;">OO</span></td>
+        </tr>
+        <tr>
+<td><span id="31" onclick="ticHere('31')" style="color: gray; font-size: 30px;">OO</span></td>
+<td><span id="32" onclick="ticHere('32')" style="color: gray; font-size: 30px;">OO</span></td>
+<td><span id="33" onclick="ticHere('33')" style="color: gray; font-size: 30px;">OO</span></td>
+        </tr>
+    </table>
+</body>
+</html>
